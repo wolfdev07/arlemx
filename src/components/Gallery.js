@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import CoverOne from "../assets/cover1.jpg"
-import CoverTwo from "../assets/cover2.jpg"
-import CoverThree from "../assets/cover3.jpg"
+import CoverOne from "../assets/cover1-min.jpg"
+import CoverTwo from "../assets/cover2-min.jpg"
+import CoverThree from "../assets/cover3-min.jpg"
 
 
 export function Gallery() {
