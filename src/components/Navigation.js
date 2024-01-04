@@ -17,6 +17,7 @@ export function Navigation() {
             <Nav className="me-auto">
                 <Nav.Link className='active' href="#home">Inicio</Nav.Link>
                 <Nav.Link href="#link">Servicios</Nav.Link>
+                <Nav.Link href="#link">Contáctanos</Nav.Link>
                 <NavDropdown title="Clientes" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Aviso de Privacidad</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.1">Blog</NavDropdown.Item>

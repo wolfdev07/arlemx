@@ -12,6 +12,7 @@ export function Gallery() {
                 <Carousel.Caption>
                 <h3>Sobre Nosotros</h3>
                 <p>Tenemos un alto <strong>Compromiso</strong> de <strong>Servir</strong> con <strong>Ética</strong> y <strong>Profesionalismo.</strong></p>
+                <a className='btn btn-primary'>ver más</a>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -19,6 +20,7 @@ export function Gallery() {
                 <Carousel.Caption>
                 <h3>Servicios</h3>
                 <p>Consulta nuestras <strong>Soluciones</strong> en materia <strong>Inmobiliaria</strong></p>
+                <a className='btn btn-primary'>consultar</a>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
