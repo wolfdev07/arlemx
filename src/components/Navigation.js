@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Favicon } from "../assets/favicon"
+import { Link as LinkRoute } from 'react-router-dom';
 
 export function Navigation() {
     return (
@@ -15,8 +16,8 @@ export function Navigation() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link className='active' href="#home">Inicio</Nav.Link>
-                <Nav.Link href="#link">Servicios</Nav.Link>
+                <Nav><LinkRoute className='nav-link active' to='/'>Inicio</LinkRoute></Nav>
+                <Nav><LinkRoute className='nav-link' to='/services'>Servicios</LinkRoute></Nav>
                 <Nav.Link href="#link">Contáctanos</Nav.Link>
                 <NavDropdown title="Clientes" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Aviso de Privacidad</NavDropdown.Item>

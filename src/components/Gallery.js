@@ -2,6 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import CoverOne from "../assets/cover1-min.jpg"
 import CoverTwo from "../assets/cover2-min.jpg"
 import CoverThree from "../assets/cover3-min.jpg"
+import { Link as LinkRoute } from 'react-router-dom';
 
 
 export function Gallery() {
@@ -20,7 +21,7 @@ export function Gallery() {
                 <Carousel.Caption>
                 <h3>Servicios</h3>
                 <p>Consulta nuestras <strong>Soluciones</strong> en materia <strong>Inmobiliaria</strong></p>
-                <a className='btn btn-primary'>consultar</a>
+                <LinkRoute className='btn btn-primary' to='/services'>consultar</LinkRoute>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
