@@ -18,7 +18,7 @@ export function Navigation() {
             <Nav className="me-auto">
                 <Nav><LinkRoute className='nav-link active' to='/'>Inicio</LinkRoute></Nav>
                 <Nav><LinkRoute className='nav-link' to='/services'>Servicios</LinkRoute></Nav>
-                <Nav.Link href="#link">Contáctanos</Nav.Link>
+                <Nav><LinkRoute className='nav-link' to='/about-us'>Contáctanos</LinkRoute></Nav>
                 <NavDropdown title="Clientes" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Aviso de Privacidad</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.1">Blog</NavDropdown.Item>

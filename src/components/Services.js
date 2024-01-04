@@ -112,12 +112,12 @@ function ModalReg() {
                 </p>
             </Modal.Body>
             <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-                Cerrar
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-                Contactar
-            </Button>
+                <Button variant="secondary" onClick={handleClose}>
+                    Cerrar
+                </Button>
+                <Button variant="primary" onClick={handleClose}>
+                    Contactar
+                </Button>
             </Modal.Footer>
         </Modal>
         </>
@@ -128,7 +128,12 @@ function ModalReg() {
 export function Services() {
     return(
         <>  
-            <h3 className="text-center">Servicios Legales</h3>
+            <div className="row">
+                <div className="col p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary text-center">
+                    <h3>Servicios Legales</h3>
+                    <p>Especializados en <strong>Materia Inmobiliaria.</strong></p>
+                </div>
+            </div>
             <div className="container mt-3">
 
                 <div className="card mb-3 w-70">

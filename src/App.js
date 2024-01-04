@@ -8,6 +8,7 @@ import { Gallery } from "./components/Gallery";
 import { Navigation } from "./components/Navigation"
 import { Services } from "./components/Services";
 import { Footer } from "./components/Footer";
+import { AboutUs } from "./components/AboutUs";
 
 export function App() {
     return(
@@ -16,6 +17,7 @@ export function App() {
             <Routes>
                 <Route path="/" element={ <Gallery /> }/>
                 <Route path="/services" element={ <Services /> }/>
+                <Route path="/about-us" element={<AboutUs />}/>
             </Routes>
             <Footer />
         </div>
