@@ -1,5 +1,85 @@
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import ImageOne from "../assets/card-service1-min.jpg";
 import ImageTwo from "../assets/card-service2.jpg"
+
+function ModalLess() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    return (
+        <>
+        <Button className='btn btn-sm' variant="primary" onClick={handleShow}>
+            Ver mas
+        </Button>
+
+        <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+            <Modal.Title>Servicio Legal de Arrendamiento</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <img src={ ImageOne } className='img-thumbnail rounded'/>
+                <p>¿Buscas rentar tu propiedad de manera <strong>Segura</strong> y <strong>Confiable</strong>?, nuestros expertos te ayudaran a crear un Contrato de Arrendamiento sólido.
+                Si eres <strong>Asesor Inmobiliario Profesional</strong>, nuestros servicios te ayudaran a generar confianza en tus clientes, ya que <strong>garantizarás</strong> la protección del patrimonio de tus clientes.</p>
+            </Modal.Body>
+            <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+                Cerrar
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+                Contactar
+            </Button>
+            </Modal.Footer>
+        </Modal>
+        </>
+    );
+}
+
+
+function ModalSell() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    return (
+        <>
+        <Button className='btn btn-sm' variant="primary" onClick={handleShow}>
+            Ver mas
+        </Button>
+
+        <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+            <Modal.Title>Compra-Venta de Inmuebles</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <img src={ ImageTwo } className='img-thumbnail rounded'/>
+                <p>Hazlo con asistencia de <strong>profesionales.</strong>
+                    <ul>
+                        <li>Asesoría Legal Personalizada.</li>
+                        <li>Revisión de Documentos e Integración de Expediente.</li>
+                        <li>Elaboración de Contrato de Compra-Venta, entre otros.</li>
+                        <li>Acompañamiento hasta escrituración ante Notario Publico.</li>
+                    </ul>
+                </p>
+            </Modal.Body>
+            <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+                Cerrar
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+                Contactar
+            </Button>
+            </Modal.Footer>
+        </Modal>
+        </>
+    );
+}
+
+
 
 export function Services() {
     return(
@@ -16,7 +96,7 @@ export function Services() {
                             <div className="card-body">
                                 <h6 className="card-title">Arrendamiento Seguro</h6>
                                 <p className="card-text">Protege tu hogar en alquiler con nuestra cobertura integral.</p>
-                                
+                                <ModalLess></ModalLess>
                             </div>
                         </div>
                     </div>
@@ -31,8 +111,8 @@ export function Services() {
                         <div className="col-8">
                             <div className="card-body">
                                 <h6 className="card-title">Compra-Venta de Inmuebles</h6>
-                                <p className="card-text">Comprar un bien inmueble es un gran paso, deja tu operación en manos expertas.</p>
-                                
+                                <p className="card-text">Deja tu operación en manos expertas.</p>
+                                <ModalSell></ModalSell>
                             </div>
                         </div>
                     </div>
@@ -47,7 +127,7 @@ export function Services() {
                         <div className="col-8">
                             <div className="card-body">
                                 <h6 className="card-title">Regularización de Inmuebles</h6>
-                                <p className="card-text"></p>
+                                <p className="card-text">Podemos ayudarte a regularizar cualquier propiedad.</p>
                                 
                             </div>
                         </div>
