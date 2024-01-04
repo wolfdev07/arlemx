@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import { Gallery } from "./components/Gallery";
 import { Navigation } from "./components/Navigation"
 import { Services } from "./components/Services";
+import { Footer } from "./components/Footer";
 
 export function App() {
     return(
@@ -15,6 +16,7 @@ export function App() {
                 <Route path="/" element={ <Gallery /> }/>
                 <Route path="/services" element={ <Services /> }/>
             </Routes>
+            <Footer />
         </div>
     )
 }

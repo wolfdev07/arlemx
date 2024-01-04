@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.241951ba.css",
-    "main.js": "/static/js/main.64348205.js",
+    "main.js": "/static/js/main.c92faf52.js",
     "static/media/cover3-min.jpg": "/static/media/cover3-min.a0b605c45b044b9d94a7.jpg",
     "static/media/cover2-min.jpg": "/static/media/cover2-min.b521b8058305c55a0fab.jpg",
     "static/media/cover1-min.jpg": "/static/media/cover1-min.96cf32d1399177ed7cd4.jpg",
+    "static/media/card-service1-min.jpg": "/static/media/card-service1-min.364f476fdab3fa977970.jpg",
     "index.html": "/index.html",
     "main.241951ba.css.map": "/static/css/main.241951ba.css.map",
-    "main.64348205.js.map": "/static/js/main.64348205.js.map"
+    "main.c92faf52.js.map": "/static/js/main.c92faf52.js.map"
   },
   "entrypoints": [
     "static/css/main.241951ba.css",
-    "static/js/main.64348205.js"
+    "static/js/main.c92faf52.js"
   ]
 }
