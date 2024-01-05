@@ -10,6 +10,7 @@ import { Services } from "./components/Services";
 import { Footer } from "./components/Footer";
 import { AboutUs } from "./components/AboutUs";
 import { NoticePolicy } from "./components/NoticePolicy";
+import { ContactUs } from "./components/ContactUs";
 
 export function App() {
     return(
@@ -20,6 +21,7 @@ export function App() {
                 <Route path="/services" element={ <Services /> }/>
                 <Route path="/about-us" element={<AboutUs />}/>
                 <Route path="/privacy-notice" element={<NoticePolicy /> }/>
+                <Route path="/contact-us" element={<ContactUs />}/>
             </Routes>
             <Footer />
         </>
