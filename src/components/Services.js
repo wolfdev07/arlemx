@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link as LinkRoute } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import ImageOne from "../assets/card-service1-min.jpg";
@@ -40,9 +41,7 @@ function ModalLess() {
             <Button variant="secondary" onClick={handleClose}>
                 Cerrar
             </Button>
-            <Button variant="primary" onClick={handleClose}>
-                Contactar
-            </Button>
+            <LinkRoute className='btn btn-primary' to='/contact-us'>Contactar</LinkRoute>
             </Modal.Footer>
         </Modal>
         </>
@@ -81,9 +80,7 @@ function ModalSell() {
             <Button variant="secondary" onClick={handleClose}>
                 Cerrar
             </Button>
-            <Button variant="primary" onClick={handleClose}>
-                Contactar
-            </Button>
+            <LinkRoute className='btn btn-primary' to='/contact-us'>Contactar</LinkRoute>
             </Modal.Footer>
         </Modal>
         </>
@@ -115,9 +112,7 @@ function ModalReg() {
                 <Button variant="secondary" onClick={handleClose}>
                     Cerrar
                 </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Contactar
-                </Button>
+                <LinkRoute className='btn btn-primary' to='/contact-us'>Contactar</LinkRoute>
             </Modal.Footer>
         </Modal>
         </>
