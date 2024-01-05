@@ -12,7 +12,7 @@ import { AboutUs } from "./components/AboutUs";
 
 export function App() {
     return(
-        <div className="App">
+        <>
             <Navigation />
             <Routes>
                 <Route path="/" element={ <Gallery /> }/>
@@ -20,6 +20,6 @@ export function App() {
                 <Route path="/about-us" element={<AboutUs />}/>
             </Routes>
             <Footer />
-        </div>
+        </>
     )
 }
