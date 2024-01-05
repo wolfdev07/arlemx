@@ -9,6 +9,7 @@ import { Navigation } from "./components/Navigation"
 import { Services } from "./components/Services";
 import { Footer } from "./components/Footer";
 import { AboutUs } from "./components/AboutUs";
+import { NoticePolicy } from "./components/NoticePolicy";
 
 export function App() {
     return(
@@ -18,6 +19,7 @@ export function App() {
                 <Route path="/" element={ <Gallery /> }/>
                 <Route path="/services" element={ <Services /> }/>
                 <Route path="/about-us" element={<AboutUs />}/>
+                <Route path="/privacy-notice" element={<NoticePolicy /> }/>
             </Routes>
             <Footer />
         </>

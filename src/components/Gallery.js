@@ -29,7 +29,7 @@ export function Gallery() {
                 <Carousel.Caption>
                 <h3 className='mb-1'>Aviso de Privacidad</h3>
                 <p>Toda tu <strong>información</strong> está <strong>protegida.</strong></p>
-                <a className='btn btn-primary'>consultar</a>
+                <LinkRoute className='btn btn-primary' to='/privacy-notice'>consultar</LinkRoute>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

@@ -6,6 +6,7 @@ import PPClientOne from "../assets/pp-client-1.jpg"
 import PPClientTwo from "../assets/pp-client-2.jpg"
 import PPClientThree from "../assets/pp-client-3.jpg"
 import PPClientFour from "../assets/pp-client-4.jpg"
+import { StarIcon } from '../assets/star-icon';
 
 function GalleryClients() {
     return (
@@ -36,6 +37,12 @@ function Recommendations(params) {
                         <h6>Mariana Miranda</h6>
                     </div>
                     <p>¡Increíble experiencia con <strong>Área Legal</strong>! Su asesoría legal fue fundamental para asegurarme de que todo estuviera en orden al comprar mi casa. Profesionalismo y tranquilidad en un solo servicio.</p>
+                    <p>
+                        <StarIcon></StarIcon> 
+                        <StarIcon></StarIcon>
+                        <StarIcon></StarIcon>
+                        <StarIcon></StarIcon>
+                    </p>
                 </div>
             </div>
 
@@ -46,6 +53,13 @@ function Recommendations(params) {
                         <h6>Roberto Valencia</h6>
                     </div>
                     <p>Estoy más que satisfecho con la ayuda de <strong>Área Legal México</strong> en la compra de mi nuevo hogar. Su atención a los detalles y claridad en cada paso me dio la confianza necesaria. ¡Altamente recomendado!</p>
+                    <p>
+                        <StarIcon></StarIcon> 
+                        <StarIcon></StarIcon>
+                        <StarIcon></StarIcon>
+                        <StarIcon></StarIcon>
+                        <StarIcon></StarIcon>
+                    </p>
                 </div>
             </div>
 
@@ -56,6 +70,13 @@ function Recommendations(params) {
                         <h6>Carolina Pineda</h6>
                     </div>
                     <p>Estoy impresionada con el equipo de <strong>Área Legal México</strong>. Me ayudaron a resolver un problema de arrendamiento de forma rápida y eficiente. Su conocimiento legal marca la diferencia.</p>
+                    <p>
+                        <StarIcon></StarIcon> 
+                        <StarIcon></StarIcon>
+                        <StarIcon></StarIcon>
+                        <StarIcon></StarIcon>
+                        <StarIcon></StarIcon>
+                    </p>
                 </div>
             </div>
 
@@ -66,6 +87,13 @@ function Recommendations(params) {
                         <h6>Francisco García</h6>
                     </div>
                     <p>Honestamente, no puedo recomendar lo suficiente a <strong>Área Legal México</strong>. Su equipo legal hizo que todo el proceso de Renta de mi propiedad fuera sencillo y sin preocupaciones legales. ¡Un aliado invaluable!</p>
+                    <p>
+                        <StarIcon></StarIcon> 
+                        <StarIcon></StarIcon>
+                        <StarIcon></StarIcon>
+                        <StarIcon></StarIcon>
+                        <StarIcon></StarIcon>
+                    </p>
                 </div>
             </div>
         </>
@@ -87,16 +115,17 @@ export function AboutUs() {
                 <div className="col-12">
                     <p className="text-align p-2">
                         Nuestra misión es ayudar a <strong>Proteger tu Patrimonio</strong> a través de <strong>Instrumentos Legales</strong> que pueden prevenir futuros percances, contamos con un equipo de <strong>Profesionales con amplia Experiencia</strong> en <strong>Materia Inmobiliaria</strong>, te invitamos a conocer nuestros servicios.
-                        La experiencia y profesionalismo nos respaldan, conoce a algunos de nuestros clientes:
+                        La experiencia y profesionalismo nos respaldan.
                     </p>
                 </div>
 
-                <div className='col-12 mb-2'>
+                <div className='col-12 mb-2 mt-4'>
+                    <h5 className='text-center mt-4'>Nuestros Socios</h5>
                     <GalleryClients></GalleryClients>
                 </div>
 
                 <div className='col-12 mt-4'>
-                    <h5 className='text-center mt-4'>Reseñas de Nuestros Clientes y Socios</h5>
+                    <h5 className='text-center mt-4'>Reseñas de Nuestros Clientes</h5>
                     <Recommendations></Recommendations>
                 </div>
                 
